@@ -7,7 +7,7 @@ pipeline {
         stage('Build') {
             steps {
                     sh 'docker build -t backend .'
-                    sh 'docker tag mohsinm/backend:Second mohsinm/backend:third'
+                    sh 'docker tag backend mohsinm/backend:third'
             }
         }
         // stage('Test') {
